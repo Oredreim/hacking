@@ -1,0 +1,1 @@
+# Nmap 7.91 scan initiated Sun Feb 21 17:08:00 2021 as: nmap -sC -sS -sV -p- -vvv -oN luannenmap.txt -vvv 10.10.10.218

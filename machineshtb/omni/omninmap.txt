@@ -1,0 +1,29 @@
+# Nmap 7.91 scan initiated Thu Dec 17 15:21:07 2020 as: nmap -sC -sS -sV -p- -vvv -oN omninmap.txt -vvv 10.10.10.204
+Nmap scan report for 10.10.10.204
+Host is up, received echo-reply ttl 127 (0.11s latency).
+Scanned at 2020-12-17 15:21:08 EST for 223s
+Not shown: 65529 filtered ports
+Reason: 65529 no-responses
+PORT      STATE SERVICE  REASON          VERSION
+135/tcp   open  msrpc    syn-ack ttl 127 Microsoft Windows RPC
+5985/tcp  open  upnp     syn-ack ttl 127 Microsoft IIS httpd
+8080/tcp  open  upnp     syn-ack ttl 127 Microsoft IIS httpd
+| http-auth: 
+| HTTP/1.1 401 Unauthorized\x0D
+|_  Basic realm=Windows Device Portal
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Site doesn't have a title.
+29817/tcp open  unknown  syn-ack ttl 127
+29819/tcp open  arcserve syn-ack ttl 127 ARCserve Discovery
+29820/tcp open  unknown  syn-ack ttl 127
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port29820-TCP:V=7.91%I=7%D=12/17%Time=5FDBBE48%P=x86_64-pc-linux-gnu%r(
+SF:NULL,10,"\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12")%r(GenericLines,10,
+SF:"\*LY\xa5\xfb`\x04G\xa9m\x1c\xc9}\xc8O\x12")%r(Help,10,"\*LY\xa5\xfb`\x
+SF:04G\xa9m\x1c\xc9}\xc8O\x12")%r(JavaRMI,10,"\*LY\xa5\xfb`\x04G\xa9m\x1c\
+SF:xc9}\xc8O\x12");
+Service Info: Host: PING; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Dec 17 15:24:51 2020 -- 1 IP address (1 host up) scanned in 223.97 seconds

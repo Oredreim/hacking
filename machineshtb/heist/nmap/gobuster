@@ -1,0 +1,6 @@
+http://10.10.10.149/attachments          (Status: 301) [Size: 155] [--> http://10.10.10.149/attachments/]
+http://10.10.10.149/css                  (Status: 301) [Size: 147] [--> http://10.10.10.149/css/]
+http://10.10.10.149/images               (Status: 301) [Size: 150] [--> http://10.10.10.149/images/]
+http://10.10.10.149/Images               (Status: 301) [Size: 150] [--> http://10.10.10.149/Images/]
+http://10.10.10.149/index.php            (Status: 302) [Size: 0] [--> login.php]
+http://10.10.10.149/js                   (Status: 301) [Size: 146] [--> http://10.10.10.149/js/]

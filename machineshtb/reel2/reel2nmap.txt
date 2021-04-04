@@ -1,0 +1,74 @@
+# Nmap 7.91 scan initiated Mon Mar  8 14:14:50 2021 as: nmap -sC -sS -sV -p- -vvv -oN reel2nmap.txt -vvv 10.10.10.210
+Nmap scan report for 10.10.10.210
+Host is up, received echo-reply ttl 127 (0.095s latency).
+Scanned at 2021-03-08 14:14:51 -05 for 338s
+Not shown: 65519 filtered ports
+Reason: 65519 no-responses
+PORT     STATE SERVICE    REASON          VERSION
+80/tcp   open  http       syn-ack ttl 127 Microsoft IIS httpd 8.5
+|_http-server-header: Microsoft-IIS/8.5
+|_http-title: 403 - Forbidden: Access is denied.
+443/tcp  open  ssl/https? syn-ack ttl 127
+| ssl-cert: Subject: commonName=Reel2
+| Subject Alternative Name: DNS:Reel2, DNS:Reel2.htb.local
+| Issuer: commonName=Reel2
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2020-07-30T10:12:46
+| Not valid after:  2025-07-30T10:12:46
+| MD5:   aa49 5cac 7115 c7fe 0628 2a6b 0124 37c4
+| SHA-1: d7ea 2696 a56f 09cb 24ce 557f 830e 86ec 5f63 0f2d
+| -----BEGIN CERTIFICATE-----
+| MIIDAjCCAeqgAwIBAgIQWlAODKHeRKhAoNajyUQfPzANBgkqhkiG9w0BAQUFADAQ
+| MQ4wDAYDVQQDEwVSZWVsMjAeFw0yMDA3MzAxMDEyNDZaFw0yNTA3MzAxMDEyNDZa
+| MBAxDjAMBgNVBAMTBVJlZWwyMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKC
+| AQEA7TbB/U28rd2ITtVpYctNMtlUSIYBLbXIhcOEp7noZORecx8d1E1pCgtsGTgV
+| 35y13jEcATGYk0HGr3/5KF04GVVVK3vDj/bVLi6QfPOxoPZq4muWhFLb+f/3cqhj
+| 49uEJMIWoTMcLmGymCP/zc88oMGWCcnebUYnHdMQzmOE+jaI5sk8xWxeoIv8t/1X
+| y4bF46Y3RBOTJNLJTi0s9qoNUlRbXGpZ548QT0+4T2q5sbCu/iEdSGucFkj7cLy+
+| q0Gkccc2sinSN4ftKpSMi+A1aZjxysCyQXWJhjLiMBT5LGuOlUnhNQhEwF6/o3fN
+| u+evEyfB764QW6Uo7zPlq827EQIDAQABo1gwVjAOBgNVHQ8BAf8EBAMCBaAwIQYD
+| VR0RBBowGIIFUmVlbDKCD1JlZWwyLmh0Yi5sb2NhbDATBgNVHSUEDDAKBggrBgEF
+| BQcDATAMBgNVHRMBAf8EAjAAMA0GCSqGSIb3DQEBBQUAA4IBAQCkyMyuXsxI6QwQ
+| zrZwrhG4ZEftEABrxwEcVA/MedE2wvNihk2EMndVCCLSSOocDX6g7Z2hB3JQ1n+p
+| abQ2UyaSSU3VVeEsczHi40wSfnadViUGQBXxUckGS8wgpH+CGOBQlnDx3wLo98nU
+| 0Guga4NyQ3ffKxSmYKlqb5ntroBnhw/X5JRoxybjwR08nuJDTbWz1R3J3dZgCSQ4
+| L6MCq4fbpu9oLfw5KBCNdATeXftJsY+/YitUNwo5wLhz39RBwcUhsNur4j/g9jxU
+| lokpm7spuW2gkWEW/QvwR2JDLBzEWYf/7jnl3rjnaHVVqP2LwsYVsEvtJlmu687b
+| /bkl5nE+
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-03-08T19:23:29+00:00; +3m07s from scanner time.
+5985/tcp open  http       syn-ack ttl 127 Microsoft HTTPAPI httpd 2.0 (SSDP/UPnP)
+|_http-server-header: Microsoft-HTTPAPI/2.0
+|_http-title: Not Found
+6001/tcp open  ncacn_http syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+6002/tcp open  ncacn_http syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+6004/tcp open  ncacn_http syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+6005/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6006/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6007/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6008/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6010/tcp open  ncacn_http syn-ack ttl 127 Microsoft Windows RPC over HTTP 1.0
+6011/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6012/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6016/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+6165/tcp open  msrpc      syn-ack ttl 127 Microsoft Windows RPC
+8080/tcp open  http       syn-ack ttl 127 Apache httpd 2.4.43 ((Win64) OpenSSL/1.1.1g PHP/7.2.32)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-open-proxy: Proxy might be redirecting requests
+|_http-server-header: Apache/2.4.43 (Win64) OpenSSL/1.1.1g PHP/7.2.32
+|_http-title: Welcome | Wallstant
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: 3m06s
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Mon Mar  8 14:20:29 2021 -- 1 IP address (1 host up) scanned in 339.01 seconds

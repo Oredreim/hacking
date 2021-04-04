@@ -1,0 +1,4 @@
+http://10.10.19.150/.htaccess (Status: 403)
+http://10.10.19.150/.htpasswd (Status: 403)
+http://10.10.19.150/content (Status: 301)
+http://10.10.19.150/server-status (Status: 403)

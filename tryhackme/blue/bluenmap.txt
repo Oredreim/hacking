@@ -1,0 +1,90 @@
+# Nmap 7.91 scan initiated Tue Mar 16 14:40:13 2021 as: nmap -sC -sS -sV -p- -vvv -oN bluenmap.txt -vvv 10.10.205.179
+Increasing send delay for 10.10.205.179 from 0 to 5 due to 681 out of 2268 dropped probes since last increase.
+Nmap scan report for 10.10.205.179
+Host is up, received echo-reply ttl 127 (0.19s latency).
+Scanned at 2021-03-16 14:40:13 -05 for 946s
+Not shown: 65526 closed ports
+Reason: 65526 resets
+PORT      STATE SERVICE            REASON          VERSION
+135/tcp   open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+139/tcp   open  netbios-ssn        syn-ack ttl 127 Microsoft Windows netbios-ssn
+445/tcp   open  microsoft-ds       syn-ack ttl 127 Windows 7 Professional 7601 Service Pack 1 microsoft-ds (workgroup: WORKGROUP)
+3389/tcp  open  ssl/ms-wbt-server? syn-ack ttl 127
+| ssl-cert: Subject: commonName=Jon-PC
+| Issuer: commonName=Jon-PC
+| Public Key type: rsa
+| Public Key bits: 2048
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2021-03-15T19:39:07
+| Not valid after:  2021-09-14T19:39:07
+| MD5:   4f89 d37b b50b d438 e576 90cc baa0 5a64
+| SHA-1: 0caf 83aa 1a31 6175 86fc 0b49 db08 f705 1efa 9ed0
+| -----BEGIN CERTIFICATE-----
+| MIIC0DCCAbigAwIBAgIQYE9hsZfy4YNOD39Z/lcG9jANBgkqhkiG9w0BAQUFADAR
+| MQ8wDQYDVQQDEwZKb24tUEMwHhcNMjEwMzE1MTkzOTA3WhcNMjEwOTE0MTkzOTA3
+| WjARMQ8wDQYDVQQDEwZKb24tUEMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEK
+| AoIBAQDGW4vELw9nchfBJHtY01AybU6fBBlMnyUWf2JyVBn57eRvljgazX/3eciE
+| vV8/Zcm1HgOQLTJk9bal3XMGLC2iPdd6Md4BO2QqaNWg4e3wfjXD5uKcXbo+sxc+
+| CMAPy69zCws2dcEeD5xT1UYDb1B7axwxDzkW1j7howrhpcIIkXylaHCu7bhy0U9d
+| S7N/Y0PHx6MTx9sJGggCPCdSINHn7oc4D+xbQVoth4BqJv3ZBsC7MuClSK5wWNGC
+| 4GMgQhHSIHKIIIrWl9F/adbPXvti4IV8sLsB8w6Rq/anVWcedDtJe0yTgAqezvI2
+| i6JReRZmMe1kvMebbTXT/Q+PVVnxAgMBAAGjJDAiMBMGA1UdJQQMMAoGCCsGAQUF
+| BwMBMAsGA1UdDwQEAwIEMDANBgkqhkiG9w0BAQUFAAOCAQEASR0Fn+NTDm2CAvYg
+| CElSh3/w4/QAhjHwZJE+PNUcCa8oEBjDygDZZGzqu3aQ9s2oF9COOMTlDOxi8VOB
+| RNw9HdpJmmWQRc1xxxbecz5ubyQlF+a4rlE0UyMg3Iunb/n5fjPh0+DCfIlWkJcK
+| bf71vTw53ODJKm+fdo6c2n8GkjFlU4L8lKJLRwdOG3lTEGfwXRL4dCC+MOBm/qCn
+| sPmqLvXGBr2UWxO91Q236tWIdUVOkzB41Ese68m3lb3DFcqSi4ptnPoE8cmYFhia
+| R/YsUw/65UUrtVKCvTtciCMQQ3AEZ0jIJePwnDvYIiJNvxZTqj1aPFzWog1/6CAS
+| mP59rQ==
+|_-----END CERTIFICATE-----
+|_ssl-date: 2021-03-16T19:56:00+00:00; +1s from scanner time.
+49152/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49153/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49154/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49160/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+49162/tcp open  msrpc              syn-ack ttl 127 Microsoft Windows RPC
+Service Info: Host: JON-PC; OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: mean: 1h15m00s, deviation: 2h30m00s, median: 0s
+| nbstat: NetBIOS name: JON-PC, NetBIOS user: <unknown>, NetBIOS MAC: 02:c1:b4:51:50:43 (unknown)
+| Names:
+|   JON-PC<00>           Flags: <unique><active>
+|   WORKGROUP<00>        Flags: <group><active>
+|   JON-PC<20>           Flags: <unique><active>
+|   WORKGROUP<1e>        Flags: <group><active>
+|   WORKGROUP<1d>        Flags: <unique><active>
+|   \x01\x02__MSBROWSE__\x02<01>  Flags: <group><active>
+| Statistics:
+|   02 c1 b4 51 50 43 00 00 00 00 00 00 00 00 00 00 00
+|   00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+|_  00 00 00 00 00 00 00 00 00 00 00 00 00 00
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 64850/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 51299/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 42974/udp): CLEAN (Timeout)
+|   Check 4 (port 52132/udp): CLEAN (Failed to receive data)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb-os-discovery: 
+|   OS: Windows 7 Professional 7601 Service Pack 1 (Windows 7 Professional 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1:professional
+|   Computer name: Jon-PC
+|   NetBIOS computer name: JON-PC\x00
+|   Workgroup: WORKGROUP\x00
+|_  System time: 2021-03-16T14:55:54-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-03-16T19:55:54
+|_  start_date: 2021-03-16T19:39:05
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Mar 16 14:55:59 2021 -- 1 IP address (1 host up) scanned in 946.51 seconds

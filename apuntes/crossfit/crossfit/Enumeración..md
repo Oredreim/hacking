@@ -20,7 +20,7 @@ FTP over SSL
 HTTP: Default page
 Host: ebian 10+deb10u2 (protocol 2.0) 
 ```bash
- 1   │ # Nmap 7.91 scan initiated Thu Apr 15 11:57:46 2021 as: nmap -sC -sV -p21,22,80 -oN targeted 10.10.10.208
+   1   │ # Nmap 7.91 scan initiated Thu Apr 15 11:57:46 2021 as: nmap -sC -sV -p21,22,80 -oN targeted 10.10.10.208
    2   │ Nmap scan report for 10.10.10.208
    3   │ Host is up (0.12s latency).
    4   │ 

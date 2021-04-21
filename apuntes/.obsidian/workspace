@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Devel/Vulnerabilidades/Escalada de Privilegios.md",
-            "mode": "source"
+            "file": "Bounty/Vulnerabilidades/Subida de archivos no controlada.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Devel/Vulnerabilidades/Escalada de Privilegios.md",
+                "file": "Bounty/Vulnerabilidades/Subida de archivos no controlada.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "44213396d06a34c1",
   "lastOpenFiles": [
-    "Devel/Vulnerabilidades/Escalada de Privilegios.md",
-    "Devel/Vulnerabilidades/FTP.md",
     "Bounty/Vulnerabilidades/Subida de archivos no controlada.md",
     "Bounty/Vulnerabilidades/Escalada de Privilegios.md",
-    "Devel/Vulnerabilidades/Untitled.md",
     "Bounty/Vulnerabilidades/Ejecución Remota de Comandos.md",
-    "Bounty/Reconocimiento/Sistema Operativo.md",
-    "Devel/Enumeración/Untitled.md",
     "Bounty/Reconocimiento/Rutas y archivos.md",
-    "Devel/Enumeración/Escaneo de Puertos.md"
+    "Bounty/Reconocimiento/Sistema Operativo.md",
+    "Bounty/Reconocimiento/Escaneo de puertos.md",
+    "Bounty/Reconocimiento/Enumeración de Servicios.md",
+    "Deloitte/Hashes.md",
+    "Devel/Vulnerabilidades/FTP.md",
+    "Devel/Vulnerabilidades/Escalada de Privilegios.md"
   ]
 }

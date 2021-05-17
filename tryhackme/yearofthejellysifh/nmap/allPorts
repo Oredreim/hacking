@@ -1,0 +1,5 @@
+# Nmap 7.91 scan initiated Fri May 14 13:32:20 2021 as: nmap -p- --open -sS -T5 -vvv -n -Pn -oG allPorts 63.35.209.118
+# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
+Host: 63.35.209.118 ()	Status: Up
+Host: 63.35.209.118 ()	Ports: 21/open/tcp//ftp///, 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///, 8000/open/tcp//http-alt///, 8096/open/tcp/////	Ignored State: filtered (65529)
+# Nmap done at Fri May 14 13:44:28 2021 -- 1 IP address (1 host up) scanned in 728.51 seconds

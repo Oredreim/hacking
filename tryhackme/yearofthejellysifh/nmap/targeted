@@ -1,0 +1,125 @@
+# Nmap 7.91 scan initiated Fri May 14 13:48:13 2021 as: nmap -sC -sV -p21,22,80,443,8000,8096 -oN targeted 63.35.209.118
+Nmap scan report for ec2-63-35-209-118.eu-west-1.compute.amazonaws.com (63.35.209.118)
+Host is up (0.11s latency).
+
+PORT     STATE SERVICE  VERSION
+21/tcp   open  ftp      vsftpd 3.0.3
+22/tcp   open  ssh      OpenSSH 5.9p1 Debian 5ubuntu1.4 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|_  2048 46:b2:81:be:e0:bc:a7:86:39:39:82:5b:bf:e5:65:58 (RSA)
+80/tcp   open  http     Apache httpd 2.4.29
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Did not follow redirect to https://robyns-petshop.thm/
+443/tcp  open  ssl/http Apache httpd 2.4.29 ((Ubuntu))
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+|_http-title: Robyn&#039;s Pet Shop
+| ssl-cert: Subject: commonName=robyns-petshop.thm/organizationName=Robyns Petshop/stateOrProvinceName=South West/countryName=GB
+| Subject Alternative Name: DNS:robyns-petshop.thm, DNS:monitorr.robyns-petshop.thm, DNS:beta.robyns-petshop.thm, DNS:dev.robyns-petshop.thm
+| Not valid before: 2021-05-14T17:31:44
+|_Not valid after:  2022-05-14T17:31:44
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+8000/tcp open  http-alt
+| fingerprint-strings: 
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Content-Length: 15
+|_    Request
+|_http-title: Under Development!
+|_http-trane-info: Problem with XML parsing of /evox/about
+8096/tcp open  unknown
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 404 Not Found
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:49 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|     X-Response-Time-ms: 311
+|   GenericLines: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:20 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   GetRequest: 
+|     HTTP/1.1 302 Found
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:20 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|     Location: /web/index.html
+|   HTTPOptions: 
+|     HTTP/1.1 302 Found
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:21 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|     Location: /web/index.html
+|   Help, SSLSessionReq: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:37 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   Kerberos, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:38 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   LPDString: 
+|     HTTP/1.1 400 Bad Request
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:50 GMT
+|     Server: Kestrel
+|     Content-Length: 0
+|   RTSPRequest: 
+|     HTTP/1.1 505 HTTP Version Not Supported
+|     Connection: close
+|     Date: Fri, 14 May 2021 17:48:21 GMT
+|     Server: Kestrel
+|_    Content-Length: 0
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8000-TCP:V=7.91%I=7%D=5/14%Time=609EB7E9%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,3F,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nContent-Length:\x2
+SF:015\r\n\r\n400\x20Bad\x20Request");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port8096-TCP:V=7.91%I=7%D=5/14%Time=609EB7E4%P=x86_64-pc-linux-gnu%r(Ge
+SF:nericLines,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20clo
+SF:se\r\nDate:\x20Fri,\x2014\x20May\x202021\x2017:48:20\x20GMT\r\nServer:\
+SF:x20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(GetRequest,8D,"HTTP/1\.1
+SF:\x20302\x20Found\r\nConnection:\x20close\r\nDate:\x20Fri,\x2014\x20May\
+SF:x202021\x2017:48:20\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x20
+SF:0\r\nLocation:\x20/web/index\.html\r\n\r\n")%r(HTTPOptions,8D,"HTTP/1\.
+SF:1\x20302\x20Found\r\nConnection:\x20close\r\nDate:\x20Fri,\x2014\x20May
+SF:\x202021\x2017:48:21\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x2
+SF:00\r\nLocation:\x20/web/index\.html\r\n\r\n")%r(RTSPRequest,87,"HTTP/1\
+SF:.1\x20505\x20HTTP\x20Version\x20Not\x20Supported\r\nConnection:\x20clos
+SF:e\r\nDate:\x20Fri,\x2014\x20May\x202021\x2017:48:21\x20GMT\r\nServer:\x
+SF:20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(Help,78,"HTTP/1\.1\x20400
+SF:\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20Fri,\x2014\x20Ma
+SF:y\x202021\x2017:48:37\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x
+SF:200\r\n\r\n")%r(SSLSessionReq,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\
+SF:nConnection:\x20close\r\nDate:\x20Fri,\x2014\x20May\x202021\x2017:48:37
+SF:\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(Termi
+SF:nalServerCookie,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x
+SF:20close\r\nDate:\x20Fri,\x2014\x20May\x202021\x2017:48:38\x20GMT\r\nSer
+SF:ver:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n")%r(TLSSessionReq,78,"H
+SF:TTP/1\.1\x20400\x20Bad\x20Request\r\nConnection:\x20close\r\nDate:\x20F
+SF:ri,\x2014\x20May\x202021\x2017:48:38\x20GMT\r\nServer:\x20Kestrel\r\nCo
+SF:ntent-Length:\x200\r\n\r\n")%r(Kerberos,78,"HTTP/1\.1\x20400\x20Bad\x20
+SF:Request\r\nConnection:\x20close\r\nDate:\x20Fri,\x2014\x20May\x202021\x
+SF:2017:48:38\x20GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n
+SF:")%r(FourOhFourRequest,8F,"HTTP/1\.1\x20404\x20Not\x20Found\r\nConnecti
+SF:on:\x20close\r\nDate:\x20Fri,\x2014\x20May\x202021\x2017:48:49\x20GMT\r
+SF:\nServer:\x20Kestrel\r\nContent-Length:\x200\r\nX-Response-Time-ms:\x20
+SF:311\r\n\r\n")%r(LPDString,78,"HTTP/1\.1\x20400\x20Bad\x20Request\r\nCon
+SF:nection:\x20close\r\nDate:\x20Fri,\x2014\x20May\x202021\x2017:48:50\x20
+SF:GMT\r\nServer:\x20Kestrel\r\nContent-Length:\x200\r\n\r\n");
+Service Info: Host: robyns-petshop.thm; OSs: Unix, Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Fri May 14 13:50:26 2021 -- 1 IP address (1 host up) scanned in 132.54 seconds

@@ -7,8 +7,11 @@
         "id": "3b5c63c8cd38d153",
         "type": "leaf",
         "state": {
-          "type": "empty",
-          "state": {}
+          "type": "markdown",
+          "state": {
+            "file": "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
+            "mode": "source"
+          }
         }
       }
     ],
@@ -65,6 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -84,15 +88,15 @@
   },
   "active": "3b5c63c8cd38d153",
   "lastOpenFiles": [
+    "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
+    "YearOfTheJellyFish/Reconocimiento/Enumeración de Servicios.md",
+    "Bounty/Reconocimiento/Enumeración de Servicios.md",
+    "YearOfTheJellyFish/Reconocimiento/Rutas y Archivos.md",
+    "Bounty/Reconocimiento/Escaneo de puertos.md",
+    "YearOfTheJellyFish/Reconocimiento/Untitled.md",
+    "Untitled.md",
     "Deloitte/Untitled.md",
     "Deloitte/Hashes.md",
-    "Bounty/Vulnerabilidades/Subida de archivos no controlada.md",
-    "Bounty/Vulnerabilidades/Escalada de Privilegios.md",
-    "Bounty/Vulnerabilidades/Ejecución Remota de Comandos.md",
-    "Bounty/Reconocimiento/Rutas y archivos.md",
-    "Bounty/Reconocimiento/Sistema Operativo.md",
-    "Bounty/Reconocimiento/Escaneo de puertos.md",
-    "Bounty/Reconocimiento/Enumeración de Servicios.md",
-    "Devel/Vulnerabilidades/FTP.md"
+    "Bounty/Vulnerabilidades/Subida de archivos no controlada.md"
   ]
 }

@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
-            "mode": "source"
+            "file": "YearOfTheJellyFish/Reconocimiento/Sistema Operativo.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
+                "file": "YearOfTheJellyFish/Reconocimiento/Sistema Operativo.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "3b5c63c8cd38d153",
   "lastOpenFiles": [
+    "YearOfTheJellyFish/Reconocimiento/Sistema Operativo.md",
+    "Bounty/Reconocimiento/Sistema Operativo.md",
+    "YearOfTheJellyFish/Reconocimiento/Rutas y Archivos.md",
     "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
     "YearOfTheJellyFish/Reconocimiento/Enumeración de Servicios.md",
     "Bounty/Reconocimiento/Enumeración de Servicios.md",
-    "YearOfTheJellyFish/Reconocimiento/Rutas y Archivos.md",
     "Bounty/Reconocimiento/Escaneo de puertos.md",
     "YearOfTheJellyFish/Reconocimiento/Untitled.md",
     "Untitled.md",
-    "Deloitte/Untitled.md",
-    "Deloitte/Hashes.md",
-    "Bounty/Vulnerabilidades/Subida de archivos no controlada.md"
+    "Deloitte/Untitled.md"
   ]
 }

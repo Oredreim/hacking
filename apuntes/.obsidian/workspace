@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "YearOfTheJellyFish/Reconocimiento/Sistema Operativo.md",
-            "mode": "preview"
+            "file": "Knife/Reconocimiento/Enumeracion.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "YearOfTheJellyFish/Reconocimiento/Sistema Operativo.md",
+                "file": "Knife/Reconocimiento/Enumeracion.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "3b5c63c8cd38d153",
   "lastOpenFiles": [
-    "YearOfTheJellyFish/Reconocimiento/Sistema Operativo.md",
+    "Knife/Reconocimiento/Enumeracion.md",
+    "Knife/Reconocimiento/Enumeracion de Servicios.md",
+    "Pasted image 20210623124010.png",
+    "Images/Pasted image 20210416131510.png",
+    "Images/Pasted image 20210416132050.png",
+    "Images/Pasted image 20210416132833.png",
+    "Pasted image 20210623123828.png",
     "Bounty/Reconocimiento/Sistema Operativo.md",
-    "YearOfTheJellyFish/Reconocimiento/Rutas y Archivos.md",
-    "YearOfTheJellyFish/Reconocimiento/Escaneo de Puertos.md",
-    "YearOfTheJellyFish/Reconocimiento/Enumeración de Servicios.md",
-    "Bounty/Reconocimiento/Enumeración de Servicios.md",
-    "Bounty/Reconocimiento/Escaneo de puertos.md",
-    "YearOfTheJellyFish/Reconocimiento/Untitled.md",
-    "Untitled.md",
-    "Deloitte/Untitled.md"
+    "Bounty/Reconocimiento/Rutas y archivos.md",
+    "Bounty/Reconocimiento/Escaneo de puertos.md"
   ]
 }

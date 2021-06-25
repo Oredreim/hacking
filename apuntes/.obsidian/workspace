@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knife/Reconocimiento/Enumeracion.md",
-            "mode": "source"
+            "file": "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knife/Reconocimiento/Enumeracion.md",
+                "file": "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",

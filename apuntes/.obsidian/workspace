@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
+            "file": "TheNotebook/Vulnerabilities.md",
             "mode": "preview"
           }
         }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 357
   },
   "right": {
     "id": "ae8e93b0ea7381b9",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
+                "file": "TheNotebook/Vulnerabilities.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "3b5c63c8cd38d153",
   "lastOpenFiles": [
+    "TheNotebook/Vulnerabilities.md",
+    "TheNotebook/Image/Pasted image 20210702115136.png",
+    "TheNotebook/General Information.md",
+    "TheNotebook/Image/Pasted image 20210702114609.png",
+    "TheNotebook/Untitled.md",
+    "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
     "Knife/Reconocimiento/Enumeracion.md",
     "Knife/Reconocimiento/Enumeracion de Servicios.md",
     "Pasted image 20210623124010.png",
-    "Images/Pasted image 20210416131510.png",
-    "Images/Pasted image 20210416132050.png",
-    "Images/Pasted image 20210416132833.png",
-    "Pasted image 20210623123828.png",
-    "Bounty/Reconocimiento/Sistema Operativo.md",
-    "Bounty/Reconocimiento/Rutas y archivos.md",
-    "Bounty/Reconocimiento/Escaneo de puertos.md"
+    "Images/Pasted image 20210416131510.png"
   ]
 }

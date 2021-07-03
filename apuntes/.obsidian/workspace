@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
-            "mode": "preview"
+            "file": "TheNotebook/General Information.md",
+            "mode": "source"
           }
         }
       }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 207
   },
   "right": {
     "id": "ae8e93b0ea7381b9",
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
+                "file": "TheNotebook/General Information.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,6 +88,8 @@
   },
   "active": "3b5c63c8cd38d153",
   "lastOpenFiles": [
+    "TheNotebook/Untitled.md",
+    "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
     "Knife/Reconocimiento/Enumeracion.md",
     "Knife/Reconocimiento/Enumeracion de Servicios.md",
     "Pasted image 20210623124010.png",
@@ -95,8 +97,6 @@
     "Images/Pasted image 20210416132050.png",
     "Images/Pasted image 20210416132833.png",
     "Pasted image 20210623123828.png",
-    "Bounty/Reconocimiento/Sistema Operativo.md",
-    "Bounty/Reconocimiento/Rutas y archivos.md",
-    "Bounty/Reconocimiento/Escaneo de puertos.md"
+    "Bounty/Reconocimiento/Sistema Operativo.md"
   ]
 }

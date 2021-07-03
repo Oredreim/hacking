@@ -1,0 +1,123 @@
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[margin=2cm,top=2cm, includefoot]{geometry}
+\usepackage{graphicx}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage[most]{tcolorbox}
+\usepackage{fancyhdr}
+\usepackage[hidelinks]{hyperref}
+\usepackage{listings}
+
+% Declaracion de Colores.
+\definecolor{greenPortada}{HTML}{D62020}
+
+\newcommand{\logoportada}{imagenes/offensive-security-logo.png} % Logo de Offesive Security.
+\newcommand{\machinename}{The Nothebook} % Nombre de la maquina desarrollada.
+\newcommand{\startdate}{02 of july 2021}
+
+
+%Codigo
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\ttfamily\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+
+\lstset{style=mystyle}
+
+\setlength{\headheight}{40.2pt}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\includegraphics[width=4cm]{\logoportada}}\rhead[height=2cm]{\machinename}
+\renewcommand{\headrulewidth}{2pt}
+
+%Comienzo de Documento
+\begin{document}
+
+    % Portada 
+    % ---------------------------------------------------------------------------
+
+    \begin{titlepage}
+        \centering
+            \includegraphics[width=\textwidth]{\logoportada}\par\vspace{1cm}
+            \vfill
+            {\scshape\LARGE \textbf{OFFENSIVE SECURITY}} \par\vspace{1cm}
+            \vfill
+            {\scshape\LARGE \textbf{Penetration Test Report for Internal Lab and Exam}} \par\vspace{1cm}
+            \vfill
+            {\scshape\LARGE \textbf{oredreim@gmail.com}} \par\vspace{1cm}
+            \vfill
+            {\Huge\bfseries\textcolor{greenPortada}{\machinename}}
+            \vfill
+            \vfill
+            \begin{tcolorbox}[colback=red!5!white,colframe=red!75!black]
+                \centering
+                Copyright © 2021 Offensive Security Ltd. All rights reserved.
+                No part of this publication, in whole or in part, may be reproduced, copied, transferred or any other right reserved to its copyright owner, including photocopying and all other copying, any transfer or transmission using any network or other means of communication, any broadcast for distant learning, in any form or by any means such as any information storage, transmission or retrieval system, without prior written permission from Offensive Security.
+                .
+            \end{tcolorbox}
+            \vfill
+            \vfill
+            {\large \startdate\par}
+            \vfill
+    \end{titlepage}
+
+    % Index
+    % ---------------------------------------------------------------------------
+
+    \clearpage
+    \tableofcontents
+    \clearpage
+    \section{Offensive Security Lab and Exam Penetration Test Report}
+        \subsection{Introduction}
+            The present document take the results obtain in the auditory section made with the 
+            machine {\textbf\machinename}
+            \vspace{0.2cm}
+            \begin{figure}[h]
+                \centering
+                \includegraphics[width=10cm]{imagenes/offensive-security-logo.png}
+                \caption{here goes the caption of the images}
+            \end{figure}
+        \subsection{Objective}
+        \subsection{Requirements}
+        
+
+        
+    
+    \section{Sample Report – High-Level Summary}
+        \subsection{Sample Report - Recommendations}        
+
+            \begin{lstlisting}[language=Bash, caption=Script de algo]
+                #!/bin/bash
+                for port in $(seq 1 65535); do 
+                    timeout 1 bash -c "echo > "
+                done;wait
+            \end{lstlisting}
+    \section{Sample Report – Methodologies}
+            \subsection{Sample Report – Information Gathering}
+            \subsection{Sample Report – Service Enumeration}
+            \subsection{Penetration}
+            \subsection{Maintaining Access}
+            \subsection{House Cleaning}
+    \section{Additional Items Not Mentioned in the Report}
+\end{document}

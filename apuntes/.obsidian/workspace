@@ -9,8 +9,13 @@
         "state": {
           "type": "markdown",
           "state": {
+<<<<<<< HEAD
             "file": "TheNotebook/General Information.md",
             "mode": "source"
+=======
+            "file": "TheNotebook/Vulnerabilities.md",
+            "mode": "preview"
+>>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
           }
         }
       }
@@ -52,7 +57,11 @@
       }
     ],
     "direction": "horizontal",
+<<<<<<< HEAD
     "width": 207
+=======
+    "width": 357
+>>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
   },
   "right": {
     "id": "ae8e93b0ea7381b9",
@@ -68,7 +77,11 @@
             "state": {
               "type": "backlink",
               "state": {
+<<<<<<< HEAD
                 "file": "TheNotebook/General Information.md",
+=======
+                "file": "TheNotebook/Vulnerabilities.md",
+>>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +101,26 @@
   },
   "active": "3b5c63c8cd38d153",
   "lastOpenFiles": [
+<<<<<<< HEAD
+=======
+    "TheNotebook/Vulnerabilities.md",
+    "TheNotebook/Image/Pasted image 20210702115136.png",
+    "TheNotebook/General Information.md",
+    "TheNotebook/Image/Pasted image 20210702114609.png",
+>>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
     "TheNotebook/Untitled.md",
     "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
     "Knife/Reconocimiento/Enumeracion.md",
     "Knife/Reconocimiento/Enumeracion de Servicios.md",
     "Pasted image 20210623124010.png",
+<<<<<<< HEAD
     "Images/Pasted image 20210416131510.png",
     "Images/Pasted image 20210416132050.png",
     "Images/Pasted image 20210416132833.png",
     "Pasted image 20210623123828.png",
     "Bounty/Reconocimiento/Sistema Operativo.md"
+=======
+    "Images/Pasted image 20210416131510.png"
+>>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
   ]
 }

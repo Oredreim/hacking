@@ -1,0 +1,16 @@
+\BOOKMARK [1][-]{section.1}{Executive Summary}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Summary of Results }{section.1}% 2
+\BOOKMARK [1][-]{section.2}{Attack Narrative}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{Remote System Discovery}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{Admin Webserver Interface Compromise}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Interactive Shell to Admin Server}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{Administrative Privilege Escalation}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.5}{Java Client Attacks}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.6}{Escalation to Local Administrator}{section.2}% 9
+\BOOKMARK [2][-]{subsection.2.7}{Deep Packet Inspection Bypass}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.8}{Citrix Environment Compromise }{section.2}% 11
+\BOOKMARK [2][-]{subsection.2.9}{Escalation to Domain Administrator}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Conclusion}{}% 13
+\BOOKMARK [2][-]{subsection.3.1}{Recommendations}{section.3}% 14
+\BOOKMARK [2][-]{subsection.3.2}{Risk Rating}{section.3}% 15
+\BOOKMARK [1][-]{section.4}{Vulnerability Detail and Mitigation}{}% 16

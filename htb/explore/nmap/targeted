@@ -1,0 +1,10 @@
+# Nmap 7.91 scan initiated Sun Jul  4 11:06:55 2021 as: nmap -sC -sV -p59777 -oN targeted 10.10.10.247
+Nmap scan report for 10.10.10.247
+Host is up (0.10s latency).
+
+PORT      STATE SERVICE VERSION
+59777/tcp open  http    Bukkit JSONAPI httpd for Minecraft game server 3.6.0 or older
+|_http-title: Site doesn't have a title (text/plain).
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Sun Jul  4 11:07:07 2021 -- 1 IP address (1 host up) scanned in 11.58 seconds

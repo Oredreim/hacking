@@ -88,8 +88,8 @@
     \clearpage
     \tableofcontents
     \clearpage
-    \section{Offensive Security Lab and Exam Penetration Test Report}
-        \subsection{Introduction}
+    \section{Executive Summary}
+        \subsection{Summary of Results }
             The present document take the results obtain in the auditory section made with the 
             machine {\textbf\machinename}
             \vspace{0.2cm}
@@ -98,14 +98,10 @@
                 \includegraphics[width=10cm]{imagenes/offensive-security-logo.png}
                 \caption{here goes the caption of the images}
             \end{figure}
-        \subsection{Objective}
-        \subsection{Requirements}
         
 
-        
-    
-    \section{Sample Report – High-Level Summary}
-        \subsection{Sample Report - Recommendations}        
+    \section{Attack Narrative}
+        \subsection{Remote System Discovery}        
 
             \begin{lstlisting}[language=Bash, caption=Script de algo]
                 #!/bin/bash
@@ -113,11 +109,17 @@
                     timeout 1 bash -c "echo > "
                 done;wait
             \end{lstlisting}
-    \section{Sample Report – Methodologies}
-            \subsection{Sample Report – Information Gathering}
-            \subsection{Sample Report – Service Enumeration}
-            \subsection{Penetration}
-            \subsection{Maintaining Access}
-            \subsection{House Cleaning}
-    \section{Additional Items Not Mentioned in the Report}
+        \subsection{Admin Webserver Interface Compromise}
+        \subsection{Interactive Shell to Admin Server}
+        \subsection{Administrative Privilege Escalation}
+        \subsection{Java Client Attacks}
+        \subsection{Escalation to Local Administrator}
+        \subsection{Deep Packet Inspection Bypass}
+        \subsection{Citrix Environment Compromise }
+        \subsection{Escalation to Domain Administrator}
+
+    \section{Conclusion}
+            \subsection{Recommendations}
+            \subsection{Risk Rating}
+    \section{Vulnerability Detail and Mitigation}
 \end{document}

@@ -9,7 +9,7 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Knife/Reconocimiento/Escaneo de Puertos.md",
+            "file": "Spectra/Informacion General.md",
             "mode": "preview"
           }
         }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Knife/Reconocimiento/Escaneo de Puertos.md",
+                "file": "Spectra/Informacion General.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,9 +88,15 @@
   },
   "active": "cb4dac1948c68a3d",
   "lastOpenFiles": [
-    "Knife/Reconocimiento/Escaneo de Puertos.md",
-    "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
-    "Knife/Reconocimiento/Enumeracion de Servicios.md",
-    "TheNotebook/Vulnerabilities.md"
+    "Spectra/Informacion General.md",
+    "Bounty/Reconocimiento/Enumeración de Servicios.md",
+    "Bounty/Reconocimiento/Escaneo de puertos.md",
+    "Spectra/Untitled.md",
+    "Bounty/Vulnerabilidades/Ejecución Remota de Comandos.md",
+    "Bounty/Reconocimiento/Rutas y archivos.md",
+    "Bounty/Reconocimiento/Sistema Operativo.md",
+    "TheNotebook/Vulnerabilities.md",
+    "TheNotebook/General Information.md",
+    "Knife/Reconocimiento/Escaneo de Puertos.md"
   ]
 }

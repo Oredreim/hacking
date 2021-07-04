@@ -2,7 +2,7 @@
 
 Start with some webscan and you can see that you can log in, trying default credentials and did not work so lets register ourself, then we can log in.
 
-![plot](./image/Pasted image 20210702110003.png)
+![plot](./Image/Pasted image 20210702110003.png)
 
 So then there no more to do, we can check to make XSS on the note site, trying to create a note but there is nothing intresting there to do.
 

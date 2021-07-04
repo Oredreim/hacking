@@ -1,21 +1,16 @@
 {
   "main": {
-    "id": "fe38906926f51fad",
+    "id": "c316dc2b64105488",
     "type": "split",
     "children": [
       {
-        "id": "3b5c63c8cd38d153",
+        "id": "cb4dac1948c68a3d",
         "type": "leaf",
         "state": {
           "type": "markdown",
           "state": {
-<<<<<<< HEAD
-            "file": "TheNotebook/General Information.md",
-            "mode": "source"
-=======
-            "file": "TheNotebook/Vulnerabilities.md",
+            "file": "Knife/Reconocimiento/Escaneo de Puertos.md",
             "mode": "preview"
->>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
           }
         }
       }
@@ -23,15 +18,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b6e1cc7185d44e3e",
+    "id": "f8abe1cf66a015c5",
     "type": "split",
     "children": [
       {
-        "id": "1819e0e68f964bcc",
+        "id": "9e8ecfe5ff811479",
         "type": "tabs",
         "children": [
           {
-            "id": "f6a2b59718067a1d",
+            "id": "d61101609163a765",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -39,7 +34,7 @@
             }
           },
           {
-            "id": "b0d2f2cb3eef2f9c",
+            "id": "0b50b00315fd383d",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -57,31 +52,23 @@
       }
     ],
     "direction": "horizontal",
-<<<<<<< HEAD
-    "width": 207
-=======
-    "width": 357
->>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
+    "width": 300
   },
   "right": {
-    "id": "ae8e93b0ea7381b9",
+    "id": "c08a69049123a46a",
     "type": "split",
     "children": [
       {
-        "id": "1794d62235e2b1f9",
+        "id": "aadf3d436e2b3c3f",
         "type": "tabs",
         "children": [
           {
-            "id": "2f634b8ad244a95f",
+            "id": "07188088fe4c2dcc",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-<<<<<<< HEAD
-                "file": "TheNotebook/General Information.md",
-=======
-                "file": "TheNotebook/Vulnerabilities.md",
->>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
+                "file": "Knife/Reconocimiento/Escaneo de Puertos.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,28 +86,11 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "3b5c63c8cd38d153",
+  "active": "cb4dac1948c68a3d",
   "lastOpenFiles": [
-<<<<<<< HEAD
-=======
-    "TheNotebook/Vulnerabilities.md",
-    "TheNotebook/Image/Pasted image 20210702115136.png",
-    "TheNotebook/General Information.md",
-    "TheNotebook/Image/Pasted image 20210702114609.png",
->>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
-    "TheNotebook/Untitled.md",
+    "Knife/Reconocimiento/Escaneo de Puertos.md",
     "Knife/Reconocimiento/Enumeracion y Escalamiento.md",
-    "Knife/Reconocimiento/Enumeracion.md",
     "Knife/Reconocimiento/Enumeracion de Servicios.md",
-    "Pasted image 20210623124010.png",
-<<<<<<< HEAD
-    "Images/Pasted image 20210416131510.png",
-    "Images/Pasted image 20210416132050.png",
-    "Images/Pasted image 20210416132833.png",
-    "Pasted image 20210623123828.png",
-    "Bounty/Reconocimiento/Sistema Operativo.md"
-=======
-    "Images/Pasted image 20210416131510.png"
->>>>>>> 5c3ced63b4e7aad01d6c8a90f44aa733e86d0a5d
+    "TheNotebook/Vulnerabilities.md"
   ]
 }

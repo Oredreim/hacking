@@ -1,5 +1,14 @@
-# Nmap 7.91 scan initiated Sun Jul  4 14:03:21 2021 as: nmap -p- -sS --min-rate 5000 --open -vvvv -n -Pn -oG allPorts 10.10.10.229
-# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 10.10.10.229 ()	Status: Up
-Host: 10.10.10.229 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 3306/open/tcp//mysql///
-# Nmap done at Sun Jul  4 14:06:16 2021 -- 1 IP address (1 host up) scanned in 174.89 seconds
+# Nmap 7.91 scan initiated Sun Jul  4 14:06:50 2021 as: nmap -p- -sS --min-rate 5000 --open -vvvv -n -Pn -oN allPortss 10.10.10.229
+Nmap scan report for 10.10.10.229
+Host is up, received user-set (0.56s latency).
+Scanned at 2021-07-04 14:06:50 -05 for 175s
+Not shown: 52501 filtered ports, 13031 closed ports
+Reason: 52501 no-responses and 13031 resets
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT     STATE SERVICE REASON
+22/tcp   open  ssh     syn-ack ttl 63
+80/tcp   open  http    syn-ack ttl 63
+3306/tcp open  mysql   syn-ack ttl 63
+
+Read data files from: /usr/bin/../share/nmap
+# Nmap done at Sun Jul  4 14:09:45 2021 -- 1 IP address (1 host up) scanned in 175.22 seconds

@@ -1,0 +1,4 @@
+provider: generic
+url: 'http://updates.atom.htb'
+publisherName:
+  - HackTheBox

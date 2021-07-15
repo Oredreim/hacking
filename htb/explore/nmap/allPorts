@@ -1,5 +1,12 @@
-# Nmap 7.91 scan initiated Sun Jul  4 10:05:43 2021 as: nmap -p- -sS --min-rate 5000 --open -vvv -n -Pn -oG allPorts 10.10.10.247
-# Ports scanned: TCP(65535;1-65535) UDP(0;) SCTP(0;) PROTOCOLS(0;)
-Host: 10.10.10.247 ()	Status: Up
-Host: 10.10.10.247 ()	Ports: 59777/open/tcp/////
-# Nmap done at Sun Jul  4 10:08:30 2021 -- 1 IP address (1 host up) scanned in 166.56 seconds
+# Nmap 7.91 scan initiated Thu Jul  8 19:08:29 2021 as: nmap -p- --open -n -Pn -oN allPorts 10.10.10.247
+Nmap scan report for 10.10.10.247
+Host is up (0.30s latency).
+Not shown: 65530 closed ports, 1 filtered port
+Some closed ports may be reported as filtered due to --defeat-rst-ratelimit
+PORT      STATE SERVICE
+2222/tcp  open  EtherNetIP-1
+37165/tcp open  unknown
+42135/tcp open  unknown
+59777/tcp open  unknown
+
+# Nmap done at Thu Jul  8 19:10:04 2021 -- 1 IP address (1 host up) scanned in 95.16 seconds

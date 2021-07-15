@@ -1,0 +1,7 @@
+/images               (Status: 301) [Size: 338] [--> http://10.10.10.237/images/]
+/Images               (Status: 301) [Size: 338] [--> http://10.10.10.237/Images/]
+/releases             (Status: 301) [Size: 340] [--> http://10.10.10.237/releases/]
+/examples             (Status: 503) [Size: 402]
+/licenses             (Status: 403) [Size: 421]
+/IMAGES               (Status: 301) [Size: 338] [--> http://10.10.10.237/IMAGES/]
+/%20                  (Status: 403) [Size: 302]

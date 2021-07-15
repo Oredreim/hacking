@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Sun Jul 11 19:32:44 2021 as: nmap -sC -sV -oA AtomNmap 10.10.10.237
+Host: 10.10.10.237 ()	Status: Up
+Host: 10.10.10.237 ()	Ports: 80/open/tcp//http//Apache httpd 2.4.46 ((Win64) OpenSSL|1.1.1j PHP|7.3.27)/, 135/open/tcp//msrpc//Microsoft Windows RPC/, 443/open/tcp//ssl|http//Apache httpd 2.4.46 ((Win64) OpenSSL|1.1.1j PHP|7.3.27)/, 445/open/tcp//microsoft-ds//Windows 10 Pro 19042 microsoft-ds (workgroup: WORKGROUP)/	Ignored State: filtered (996)
+# Nmap done at Sun Jul 11 19:33:52 2021 -- 1 IP address (1 host up) scanned in 68.00 seconds

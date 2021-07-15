@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Ophiuchi/WriteUp.md",
-            "mode": "preview"
+            "file": "Atom/WriteUp.md",
+            "mode": "source"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Ophiuchi/WriteUp.md",
+                "file": "Atom/WriteUp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "547ae38f442dd49c",
   "lastOpenFiles": [
+    "Atom/WriteUp.md",
+    "Atom/Images/Pasted image 20210711150907.png",
+    "Atom/Images/Pasted image 20210711132754.png",
+    "Atom/Images/Pasted image 20210712100331.png",
+    "Atom/Images/Pasted image 20210712100916.png",
+    "Atom/Images/Pasted image 20210712100555.png",
+    "Atom/Images/Pasted image 20210712100512.png",
     "Ophiuchi/WriteUp.md",
     "Spectra/Informacion General.md",
-    "TheNotebook/Vulnerabilities.md",
-    "TheNotebook/General Information.md",
-    "Ophiuchi/Untitled.md",
-    "Pasted image 20210704145807.png",
-    "Bounty/Reconocimiento/Enumeración de Servicios.md",
-    "Bounty/Reconocimiento/Escaneo de puertos.md",
-    "Spectra/Untitled.md",
-    "Bounty/Vulnerabilidades/Ejecución Remota de Comandos.md"
+    "Atom/Untitled.md"
   ]
 }

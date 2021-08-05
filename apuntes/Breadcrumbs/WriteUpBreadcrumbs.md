@@ -1,0 +1,125 @@
+# Enumeration.
+Nmap port scanning.
+
+``` bash
+# Nmap 7.91 scan initiated Tue Jul 20 21:53:24 2021 as: nmap -sC -sV -vvv -T5 -oA targeted 10.10.10.228
+Warning: 10.10.10.228 giving up on port because retransmission cap hit (2).
+Nmap scan report for 10.10.10.228
+Host is up, received echo-reply ttl 127 (0.24s latency).
+Scanned at 2021-07-20 21:53:24 -05 for 46s
+Not shown: 993 closed ports
+Reason: 993 resets
+PORT     STATE SERVICE       REASON          VERSION
+22/tcp   open  ssh           syn-ack ttl 127 OpenSSH for_Windows_7.7 (protocol 2.0)
+| ssh-hostkey: 
+|   2048 9d:d0:b8:81:55:54:ea:0f:89:b1:10:32:33:6a:a7:8f (RSA)
+| ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQD1/bmEHFv3nRSf2uH/akLLIfkmpxbSWiVReOdwmJrM2iD9g1gqVHIceIxat222PnYkLHYG23lUQMiTXcvuwBHeB+dMUNv09IHDKCCT9XOTWc+900zrFLRoyR6LQ2O3vQ+JgWpWlvtZAV6FvcSSK3ai767qIdBNG8SAxwwQZlSxX7D/n28VJlPcXXtzoiSt+lQ1T1sq7qIXPM2CyY7qoTLjcvDz/IYqbXbinsLLOCZ9MnRnDbE8E9tLeAJGcxhpNgk0LNN6xGbj49zVhy1TRrVNhh4RD+uczVqufMQIHdCnL61p9ZIepQxhJvwSf4IHH+oaM6wy3Yu0W6pg5wQWXIkj
+|   256 1f:2e:67:37:1a:b8:91:1d:5c:31:59:c7:c6:df:14:1d (ECDSA)
+| ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBMPvEspRGrd2/vma82j25vli6C/Td5Gvl44e9IhXeZOlvojawx4tbo/OdBytc+X9b/OSP01kLK4Od62NrQmN39s=
+|   256 30:9e:5d:12:e3:c6:b7:c6:3b:7e:1e:e7:89:7e:83:e4 (ED25519)
+|_ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAII+TY3313X2GdjXH6r6IrDURWI4H4itbZG41GaktT00D
+80/tcp   open  http          syn-ack ttl 127 Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1h PHP/8.0.1)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.1
+|_http-title: Library
+135/tcp  open  msrpc         syn-ack ttl 127 Microsoft Windows RPC
+139/tcp  open  netbios-ssn   syn-ack ttl 127 Microsoft Windows netbios-ssn
+443/tcp  open  ssl/http      syn-ack ttl 127 Apache httpd 2.4.46 ((Win64) OpenSSL/1.1.1h PHP/8.0.1)
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.46 (Win64) OpenSSL/1.1.1h PHP/8.0.1
+|_http-title: Library
+| ssl-cert: Subject: commonName=localhost
+| Issuer: commonName=localhost
+| Public Key type: rsa
+| Public Key bits: 1024
+| Signature Algorithm: sha1WithRSAEncryption
+| Not valid before: 2009-11-10T23:48:47
+| Not valid after:  2019-11-08T23:48:47
+| MD5:   a0a4 4cc9 9e84 b26f 9e63 9f9e d229 dee0
+| SHA-1: b023 8c54 7a90 5bfa 119c 4e8b acca eacf 3649 1ff6
+| -----BEGIN CERTIFICATE-----
+| MIIBnzCCAQgCCQC1x1LJh4G1AzANBgkqhkiG9w0BAQUFADAUMRIwEAYDVQQDEwls
+| b2NhbGhvc3QwHhcNMDkxMTEwMjM0ODQ3WhcNMTkxMTA4MjM0ODQ3WjAUMRIwEAYD
+| VQQDEwlsb2NhbGhvc3QwgZ8wDQYJKoZIhvcNAQEBBQADgY0AMIGJAoGBAMEl0yfj
+| 7K0Ng2pt51+adRAj4pCdoGOVjx1BmljVnGOMW3OGkHnMw9ajibh1vB6UfHxu463o
+| J1wLxgxq+Q8y/rPEehAjBCspKNSq+bMvZhD4p8HNYMRrKFfjZzv3ns1IItw46kgT
+| gDpAl1cMRzVGPXFimu5TnWMOZ3ooyaQ0/xntAgMBAAEwDQYJKoZIhvcNAQEFBQAD
+| gYEAavHzSWz5umhfb/MnBMa5DL2VNzS+9whmmpsDGEG+uR0kM1W2GQIdVHHJTyFd
+| aHXzgVJBQcWTwhp84nvHSiQTDBSaT6cQNQpvag/TaED/SEQpm0VqDFwpfFYuufBL
+| vVNbLkKxbK2XwUvu0RxoLdBMC/89HqrZ0ppiONuQ+X2MtxE=
+|_-----END CERTIFICATE-----
+|_ssl-date: TLS randomness does not represent time
+| tls-alpn: 
+|_  http/1.1
+445/tcp  open  microsoft-ds? syn-ack ttl 127
+3306/tcp open  mysql?        syn-ack ttl 127
+| fingerprint-strings: 
+|   DNSVersionBindReqTCP, FourOhFourRequest, HTTPOptions, Help, Kerberos, LANDesk-RC, LDAPBindReq, LDAPSearchReq, LPDString, NCP, NotesRPC, SIPOptions, TerminalServer, TerminalServerCookie, X11Probe: 
+|_    Host '10.10.16.59' is not allowed to connect to this MariaDB server
+| mysql-info: 
+|_  MySQL Error: Host '10.10.16.59' is not allowed to connect to this MariaDB server
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port3306-TCP:V=7.91%I=7%D=7/20%Time=60F78C3A%P=x86_64-pc-linux-gnu%r(HT
+SF:TPOptions,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x
+SF:20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(DNSVe
+SF:rsionBindReqTCP,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x2
+SF:0not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r
+SF:(Help,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(TerminalS
+SF:erverCookie,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not
+SF:\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(Ker
+SF:beros,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20al
+SF:lowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(X11Probe,
+SF:4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\
+SF:x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(FourOhFourReque
+SF:st,4A,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allow
+SF:ed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(LPDString,4A
+SF:,"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x2
+SF:0to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(LDAPSearchReq,4A,
+SF:"F\0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x20
+SF:to\x20connect\x20to\x20this\x20MariaDB\x20server")%r(LDAPBindReq,4A,"F\
+SF:0\0\x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x20to\
+SF:x20connect\x20to\x20this\x20MariaDB\x20server")%r(SIPOptions,4A,"F\0\0\
+SF:x01\xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x20to\x20c
+SF:onnect\x20to\x20this\x20MariaDB\x20server")%r(LANDesk-RC,4A,"F\0\0\x01\
+SF:xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x20to\x20conne
+SF:ct\x20to\x20this\x20MariaDB\x20server")%r(TerminalServer,4A,"F\0\0\x01\
+SF:xffj\x04Host\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x20to\x20conne
+SF:ct\x20to\x20this\x20MariaDB\x20server")%r(NCP,4A,"F\0\0\x01\xffj\x04Hos
+SF:t\x20'10\.10\.16\.59'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x2
+SF:0this\x20MariaDB\x20server")%r(NotesRPC,4A,"F\0\0\x01\xffj\x04Host\x20'
+SF:10\.10\.16\.59'\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\
+SF:x20MariaDB\x20server");
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Host script results:
+|_clock-skew: -47m24s
+| p2p-conficker: 
+|   Checking for Conficker.C or higher...
+|   Check 1 (port 31431/tcp): CLEAN (Couldn't connect)
+|   Check 2 (port 9573/tcp): CLEAN (Couldn't connect)
+|   Check 3 (port 64160/udp): CLEAN (Failed to receive data)
+|   Check 4 (port 51923/udp): CLEAN (Timeout)
+|_  0/4 checks are positive: Host is CLEAN or ports are blocked
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2021-07-21T02:06:39
+|_  start_date: N/A
+
+Read data files from: /usr/bin/../share/nmap
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Tue Jul 20 21:54:10 2021 -- 1 IP address (1 host up) scanned in 46.53 seconds
+
+```

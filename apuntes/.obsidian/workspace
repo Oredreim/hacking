@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Atom/WriteUp.md",
-            "mode": "source"
+            "file": "Forest/WriteUpForest.md",
+            "mode": "preview"
           }
         }
       }
@@ -68,7 +68,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Atom/WriteUp.md",
+                "file": "Forest/WriteUpForest.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -88,15 +88,15 @@
   },
   "active": "547ae38f442dd49c",
   "lastOpenFiles": [
-    "Atom/WriteUp.md",
-    "Atom/Images/Pasted image 20210711150907.png",
-    "Atom/Images/Pasted image 20210711132754.png",
-    "Atom/Images/Pasted image 20210712100331.png",
-    "Atom/Images/Pasted image 20210712100916.png",
-    "Atom/Images/Pasted image 20210712100555.png",
-    "Atom/Images/Pasted image 20210712100512.png",
-    "Ophiuchi/WriteUp.md",
-    "Spectra/Informacion General.md",
-    "Atom/Untitled.md"
+    "Forest/WriteUpForest.md",
+    "Forest/Images/Pasted image 20210721204053.png",
+    "Pasted image 20210721204053 1.png",
+    "Forest/Untitled.md",
+    "Breadcrumbs/WriteUpBreadcrumbs.md",
+    "Atom/WriteUpAtom.md",
+    "Untitled.md",
+    "Pasted image 20210716113220.png",
+    "Pasted image 20210716113351.png",
+    "Pasted image 20210716113549.png"
   ]
 }

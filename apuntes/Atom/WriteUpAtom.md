@@ -198,3 +198,29 @@ I find a epxloit that use the default keys, but want to use it, Im gonna copy th
 
 As I said, it is `BASE64` so lets put that is from base64, and as in the exploit I take the keys, lets put the Deskeys, and there you go, you crack the password.
 
+![[Pasted image 20210716113220.png]]
+
+So, i made a connection with redis. cause thats what we are gonna use to connect with the kanban key.
+
+I send the authentication and works.
+
+Lets now try to list the keys. There is one interesting key, lets check it.
+
+![[Pasted image 20210716113351.png]]
+
+The `pk:urn:user:e8e29158-d70d-44b1-a1ba-4949d52790a0` is the one we need.
+
+![[Pasted image 20210716113432.png]]
+
+It's the key to administrator. Lets go back to `cyberchef` and decrypt the password.
+
+![[Pasted image 20210716113549.png]]
+
+Looks to similar to the one we decrypted before, but this one will work with psexec.py to get administrator access.
+
+![[Pasted image 20210716113959.png]]
+
+
+
+
+

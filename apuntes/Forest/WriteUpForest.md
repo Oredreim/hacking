@@ -71,7 +71,7 @@ With this command I can get acces and enumerate some users.
 
 Lets now look for some domain groups.
 
-![[Pasted image 20210721204133.png]]
+![](Images/Pasted%20image%2020210721204133.png)
 
 But nothing interesting.
 
@@ -79,19 +79,19 @@ But nothing interesting.
 
 Now lets use GetNPUsers.py to enumerate some password for the users we got.
 
-![[Pasted image 20210721213135.png]]
+![](Images/Pasted%20image%2020210721213135.png)
 
-![[Pasted image 20210721213529.png]]
+![](Images/Pasted%20image%2020210721213529.png)
 
 Now lets crack the hash with `john the ripper`.
 
-![[Pasted image 20210721214507.png]]
+![](Images/Pasted%20image%2020210721214507.png)
 
 And we got the password.
 
 I use `evil-winrm` to get access to the machine with the user and password I got.
 
-![[Pasted image 20210721214623.png]]
+![](Images/Pasted%20image%2020210721214623.png)
 
 # Privilege Scalation.
 I had no idea what to do here to get root, but I could do something to understand and see how can I get root.
@@ -100,27 +100,27 @@ Lets use BloodHound.
 
 After I uploaded everything to get the `.zip` to put in BloodHound. I got this path to Domain Admin.
 
-![[Pasted image 20210722112244.png]]
+![](Images/Pasted image 20210722112244.png)
 
 So it says I can create new users, and give them group domain, cause with this user `svc-alfresco` I'm not part of a group.
 
 So lets create the user and add it to a group.
 
-![[Pasted image 20210722135746.png]]
+![](Images/Pasted%20image%2020210722135746.png)
 
 Now I just need to check the `help` on the path and follow the commands it says I must do.
 
-![[Pasted image 20210722141329.png]]
+![](Images/Pasted image 20210722141329.png)
 
 It says also I need to use `PowerView.ps1`, I need to reopen a service with python to put the file on the victim machine, lets do that again but put in `PowerView.ps1`.
 
-![[Pasted image 20210722150208.png]]
-![[Pasted image 20210722143702.png]]
-![[Pasted image 20210722150123.png]]
+![](Images/Pasted%20image%2020210722150208.png)
+![](Images/Pasted%20image%2020210722143702.png)
+![](Images/Pasted%20image%2020210722150123.png)
 
 Now i can use an other tool to dump the hash from the administrator user. Named secretdump.py and we give it permissions with the user and password we create.
 
-![[Pasted image 20210722150309.png]]
+![](Images/Pasted%20image%2020210722150309.png)
 
 I have now a Administrator's hash. I can use it to get access to the victim machine with the tool `pth-winexe`.
-![[Pasted image 20210722150721.png]]
+![](Images/Pasted%20image%2020210722150721.png)

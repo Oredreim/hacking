@@ -10,7 +10,7 @@
           "type": "markdown",
           "state": {
             "file": "Forest/WriteUpForest.md",
-            "mode": "source"
+            "mode": "preview"
           }
         }
       }
@@ -52,7 +52,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 483
   },
   "right": {
     "id": "c08a69049123a46a",

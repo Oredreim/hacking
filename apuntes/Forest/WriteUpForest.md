@@ -100,7 +100,7 @@ Lets use BloodHound.
 
 After I uploaded everything to get the `.zip` to put in BloodHound. I got this path to Domain Admin.
 
-![](Images/Pasted image 20210722112244.png)
+![](Images/Pasted%20image%2020210722112244.png)
 
 So it says I can create new users, and give them group domain, cause with this user `svc-alfresco` I'm not part of a group.
 
@@ -110,7 +110,7 @@ So lets create the user and add it to a group.
 
 Now I just need to check the `help` on the path and follow the commands it says I must do.
 
-![](Images/Pasted image 20210722141329.png)
+![](Images/Pasted%20image%2020210722141329.png)
 
 It says also I need to use `PowerView.ps1`, I need to reopen a service with python to put the file on the victim machine, lets do that again but put in `PowerView.ps1`.
 

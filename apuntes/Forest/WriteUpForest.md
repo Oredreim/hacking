@@ -67,7 +67,7 @@ rpcclient -U "" -N 10.10.10.161
 
 With this command I can get acces and enumerate some users.
 
-![[Pasted image 20210721204018.png]]
+![](Images/Pasted%20image%2020210721204018.png)
 
 Lets now look for some domain groups.
 

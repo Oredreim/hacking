@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Wed Aug 18 11:08:51 2021 as: nmap -sCV -oA love-tcpservices -p80,135,139,443,445,3306,5000,5040,5985,5986,7680 10.10.10.239 -->
+<nmaprun scanner="nmap" args="nmap -sCV -oA love-tcpservices -p80,135,139,443,445,3306,5000,5040,5985,5986,7680 10.10.10.239" start="1629302931" startstr="Wed Aug 18 11:08:51 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="11" services="80,135,139,443,445,3306,5000,5040,5985-5986,7680"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.239" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<host starttime="1629302931" endtime="1629303113"><status state="up" reason="echo-reply" reason_ttl="127"/>
+<address addr="10.10.10.239" addrtype="ipv4"/>
+<hostnames>
+<hostname name="love.htb" type="PTR"/>
+</hostnames>
+<ports><port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="(Win64) OpenSSL/1.1.1j PHP/7.3.27" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-cookie-flags" output="&#xa;  /: &#xa;    PHPSESSID: &#xa;      httponly flag not set"><table key="/">
+<table key="PHPSESSID">
+<elem>httponly flag not set</elem>
+</table>
+</table>
+</script><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27</elem>
+</script><script id="http-title" output="Voting System using PHP"><elem key="title">Voting System using PHP</elem>
+</script></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="msrpc" product="Microsoft Windows RPC" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="netbios-ssn" product="Microsoft Windows netbios-ssn" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="OpenSSL/1.1.1j PHP/7.3.27" hostname="www.example.com" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script><script id="ssl-cert" output="Subject: commonName=staging.love.htb/organizationName=ValentineCorp/stateOrProvinceName=m/countryName=in&#xa;Not valid before: 2021-01-18T14:00:16&#xa;Not valid after:  2022-01-18T14:00:16"><table key="subject">
+<elem key="commonName">staging.love.htb</elem>
+<elem key="countryName">in</elem>
+<elem key="emailAddress">roy@love.htb</elem>
+<elem key="localityName">norway</elem>
+<elem key="organizationName">ValentineCorp</elem>
+<elem key="organizationalUnitName">love.htb</elem>
+<elem key="stateOrProvinceName">m</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">staging.love.htb</elem>
+<elem key="countryName">in</elem>
+<elem key="emailAddress">roy@love.htb</elem>
+<elem key="localityName">norway</elem>
+<elem key="organizationName">ValentineCorp</elem>
+<elem key="organizationalUnitName">love.htb</elem>
+<elem key="stateOrProvinceName">m</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">2048</elem>
+<elem key="modulus">D0947D49FC0C1B126D879E1E018B3721D3CB141E51E0EEF00C184075E0B3EAF46DB43CBFFA42663124E5813E30565B2C0D60ADDC3C8158F325266252C1895234A6245F6928FBC132D6DC61523E1AE999FCF4D3324C29EC81383D3ED4AF41C62510355C849E286C50B64A2E665C17A2E138886238D10BEA628AAF6FE61CB81FA11ED4BCCECE9A6CB074B4602DF5CDD8282992FEDC884011534A6146ADA9D6CE16F479F75C453C895AA07C55ECFD93725F7AFC2ED0E24146AFC27DACF87B5AD26B25234C1A4E6C8EB0DAC4E3081C75C17D90B2BFF6DB4CD6E8132524004166D8A392C3D9B570EC989D3E15FC9842EF89FB48BF95B52E0B826F7B956FA8A97D2871</elem>
+<elem key="exponent">65537</elem>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-01-18T14:00:16</elem>
+<elem key="notAfter">2022-01-18T14:00:16</elem>
+</table>
+<elem key="md5">bff01add5048afc8b3cf71406e685ff6</elem>
+<elem key="sha1">83ed29c470f64036a6f42d4d4cf618a2e9e496c2</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIDozCCAosCFFhDHcnclWJmeuqOK/LQv3XDNEu4MA0GCSqGSIb3DQEBCwUAMIGN&#xa;MQswCQYDVQQGEwJpbjEKMAgGA1UECAwBbTEPMA0GA1UEBwwGbm9yd2F5MRYwFAYD&#xa;VQQKDA1WYWxlbnRpbmVDb3JwMREwDwYDVQQLDAhsb3ZlLmh0YjEZMBcGA1UEAwwQ&#xa;c3RhZ2luZy5sb3ZlLmh0YjEbMBkGCSqGSIb3DQEJARYMcm95QGxvdmUuaHRiMB4X&#xa;DTIxMDExODE0MDAxNloXDTIyMDExODE0MDAxNlowgY0xCzAJBgNVBAYTAmluMQow&#xa;CAYDVQQIDAFtMQ8wDQYDVQQHDAZub3J3YXkxFjAUBgNVBAoMDVZhbGVudGluZUNv&#xa;cnAxETAPBgNVBAsMCGxvdmUuaHRiMRkwFwYDVQQDDBBzdGFnaW5nLmxvdmUuaHRi&#xa;MRswGQYJKoZIhvcNAQkBFgxyb3lAbG92ZS5odGIwggEiMA0GCSqGSIb3DQEBAQUA&#xa;A4IBDwAwggEKAoIBAQDQlH1J/AwbEm2Hnh4Bizch08sUHlHg7vAMGEB14LPq9G20&#xa;PL/6QmYxJOWBPjBWWywNYK3cPIFY8yUmYlLBiVI0piRfaSj7wTLW3GFSPhrpmfz0&#xa;0zJMKeyBOD0+1K9BxiUQNVyEnihsULZKLmZcF6LhOIhiONEL6mKKr2/mHLgfoR7U&#xa;vM7OmmywdLRgLfXN2Cgpkv7ciEARU0phRq2p1s4W9Hn3XEU8iVqgfFXs/ZNyX3r8&#xa;LtDiQUavwn2s+Hta0mslI0waTmyOsNrE4wgcdcF9kLK/9ttM1ugTJSQAQWbYo5LD&#xa;2bVw7JidPhX8mELviftIv5W1LguCb3uVb6ipfShxAgMBAAEwDQYJKoZIhvcNAQEL&#xa;BQADggEBANB5x2U0QuQdc9niiW8XtGVqlUZOpmToxstBm4r0Djdqv/Z73I/qys0A&#xa;y7crcy9dRO7M80Dnvj0ReGxoWN/95ZA4GSL8TUfIfXbonrCKFiXOOuS8jCzC9LWE&#xa;nP4jUUlAOJv6uYDajoD3NfbhW8uBvopO+8nywbQdiffatKO35McSl7ukvIK+d7gz&#xa;oool/rMp/fQ40A1nxVHeLPOexyB3YJIMAhm4NexfJ2TKxs10C+lJcuOxt7MhOk0h&#xa;zSPL/pMbMouLTXnIsh4SdJEzEkNnuO69yQoN8XgjM7vHvZQIlzs1R5pk4WIgKHSZ&#xa;0drwvFE50xML9h2wrGh7L9/CSbhIhO8=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="microsoft-ds" product="Windows 10 Pro 19042 microsoft-ds" extrainfo="workgroup: WORKGROUP" hostname="LOVE" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service></port>
+<port protocol="tcp" portid="3306"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="mysql" servicefp="SF-Port3306-TCP:V=7.91%I=7%D=8/18%Time=611D30A5%P=x86_64-pc-linux-gnu%r(TerminalServerCookie,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(TLSSessionReq,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(Kerberos,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(SMBProgNeg,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(X11Probe,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(FourOhFourRequest,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(LPDString,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(LDAPSearchReq,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(SIPOptions,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(LANDesk-RC,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(NCP,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(JavaRMI,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(WMSRequest,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(oracle-tns,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;)%r(ms-sql-s,4A,&quot;F\0\0\x01\xffj\x04Host\x20&apos;10\.10\.16\.32&apos;\x20is\x20not\x20allowed\x20to\x20connect\x20to\x20this\x20MariaDB\x20server&quot;);" method="table" conf="3"/><script id="fingerprint-strings" output="&#xa;  FourOhFourRequest, JavaRMI, Kerberos, LANDesk-RC, LDAPSearchReq, LPDString, NCP, SIPOptions, SMBProgNeg, TLSSessionReq, TerminalServerCookie, WMSRequest, X11Probe, ms-sql-s, oracle-tns: &#xa;    Host &apos;10.10.16.32&apos; is not allowed to connect to this MariaDB server"><elem key="FourOhFourRequest, JavaRMI, Kerberos, LANDesk-RC, LDAPSearchReq, LPDString, NCP, SIPOptions, SMBProgNeg, TLSSessionReq, TerminalServerCookie, WMSRequest, X11Probe, ms-sql-s, oracle-tns">&#xa;    Host &apos;10.10.16.32&apos; is not allowed to connect to this MariaDB server</elem>
+</script></port>
+<port protocol="tcp" portid="5000"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Apache httpd" version="2.4.46" extrainfo="OpenSSL/1.1.1j PHP/7.3.27" hostname="www.love.htb" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.46</cpe></service><script id="http-server-header" output="Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27"><elem>Apache/2.4.46 (Win64) OpenSSL/1.1.1j PHP/7.3.27</elem>
+</script><script id="http-title" output="403 Forbidden"><elem key="title">403 Forbidden</elem>
+</script></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script></port>
+<port protocol="tcp" portid="5986"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="http" product="Microsoft HTTPAPI httpd" version="2.0" extrainfo="SSDP/UPnP" ostype="Windows" tunnel="ssl" method="probed" conf="10"><cpe>cpe:/o:microsoft:windows</cpe></service><script id="http-server-header" output="Microsoft-HTTPAPI/2.0"><elem>Microsoft-HTTPAPI/2.0</elem>
+</script><script id="http-title" output="Not Found"><elem key="title">Not Found</elem>
+</script><script id="ssl-cert" output="Subject: commonName=LOVE&#xa;Subject Alternative Name: DNS:LOVE, DNS:Love&#xa;Not valid before: 2021-04-11T14:39:19&#xa;Not valid after:  2024-04-10T14:39:19"><table key="subject">
+<elem key="commonName">LOVE</elem>
+</table>
+<table key="issuer">
+<elem key="commonName">LOVE</elem>
+</table>
+<table key="pubkey">
+<elem key="type">rsa</elem>
+<elem key="bits">4096</elem>
+<elem key="modulus">F0B9E3E54C33E83DCB29EF3BDC79516A6C92997CA3161CA65BFFCDC935D0B79A9B2A11302A0E6FAFA53E1A246F275FD5C8FFB5DD568CEA02904DB6C3C2815EDF86901B58A7502E6A242E51665B494D537CA2E019307E8EA727E8BF2815DA6630C975ADD816FDD0CB1785914A03DDD5BC1297526B80CD844DB40D6EE13EA4F91400EC10A7D5B6FD871208F01CF9AD376E7B54C40C957BF538C66F462584E589419909CE0A63BE1986222813D37EA96F701FE4C7C9370A605A3A69C0982B7393345C63D8D541DF861239A1B0A090DF1CE76DEAAF21412064D8C2DC22514C629CF293A82EC4EE8262E72E7EA3D486EC7C8FC7E80E13CE42BE1E83C2F6599AB4985DA4D0EC2DF853DA142429ABC0AE937C3192B907025C339B132365484EE7D67BA7B71242DE49B43AD222084FF6778F164CF501169413889F51F59BED9857E59236B160FBCB98A580AFFE109454B3C42B6A2349421AF65BE2EEF10F02F36D4BAE143CB2B45B57700F963D23CAC6334DC7AB92C4A60382F6358123758B88907361547EC853001FC9008A853F59E25F53326BB4C3CE23BC557F7B83D8AD77BB5B78CDAAE288F3E16F800B63EDCAC3917EB1A2E375DDDDD9D7616C3C5641F12F5C1611273144F455C3EAC78A27EA80F5FA20F77643D88BDD3B9078EF1D0A9CE37C99BD148904DCB5D8BB17F5B0F279EC358D604BAA1761D1F029A7EE4B48AC846A710D</elem>
+<elem key="exponent">65537</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+<elem key="critical">true</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:LOVE, DNS:Love</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">0D:27:25:96:61:35:60:EF:20:C4:07:C4:62:0A:91:A4:06:52:F3:72</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2021-04-11T14:39:19</elem>
+<elem key="notAfter">2024-04-10T14:39:19</elem>
+</table>
+<elem key="md5">d35a2ba68ef47568f99dd6f4aaa203b5</elem>
+<elem key="sha1">84efd922a70a6d9d82b85bb3d04f066b12f86e73</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFBTCCAu2gAwIBAgIQQD+VWjjYeaVAiweoWrOJXjANBgkqhkiG9w0BAQsFADAP&#xa;MQ0wCwYDVQQDDARMT1ZFMB4XDTIxMDQxMTE0MzkxOVoXDTI0MDQxMDE0MzkxOVow&#xa;DzENMAsGA1UEAwwETE9WRTCCAiIwDQYJKoZIhvcNAQEBBQADggIPADCCAgoCggIB&#xa;APC54+VMM+g9yynvO9x5UWpskpl8oxYcplv/zck10LeamyoRMCoOb6+lPhokbydf&#xa;1cj/td1WjOoCkE22w8KBXt+GkBtYp1AuaiQuUWZbSU1TfKLgGTB+jqcn6L8oFdpm&#xa;MMl1rdgW/dDLF4WRSgPd1bwSl1JrgM2ETbQNbuE+pPkUAOwQp9W2/YcSCPAc+a03&#xa;bntUxAyVe/U4xm9GJYTliUGZCc4KY74ZhiIoE9N+qW9wH+THyTcKYFo6acCYK3OT&#xa;NFxj2NVB34YSOaGwoJDfHOdt6q8hQSBk2MLcIlFMYpzyk6guxO6CYucufqPUhux8&#xa;j8foDhPOQr4eg8L2WZq0mF2k0Owt+FPaFCQpq8Cuk3wxkrkHAlwzmxMjZUhO59Z7&#xa;p7cSQt5JtDrSIghP9nePFkz1ARaUE4ifUfWb7ZhX5ZI2sWD7y5ilgK/+EJRUs8Qr&#xa;aiNJQhr2W+Lu8Q8C821LrhQ8srRbV3APlj0jysYzTcerksSmA4L2NYEjdYuIkHNh&#xa;VH7IUwAfyQCKhT9Z4l9TMmu0w84jvFV/e4PYrXe7W3jNquKI8+FvgAtj7crDkX6x&#xa;ouN13d3Z12FsPFZB8S9cFhEnMUT0VcPqx4on6oD1+iD3dkPYi907kHjvHQqc43yZ&#xa;vRSJBNy12LsX9bDyeew1jWBLqhdh0fApp+5LSKyEanENAgMBAAGjXTBbMA4GA1Ud&#xa;DwEB/wQEAwIFoDATBgNVHSUEDDAKBggrBgEFBQcDATAVBgNVHREEDjAMggRMT1ZF&#xa;ggRMb3ZlMB0GA1UdDgQWBBQNJyWWYTVg7yDEB8RiCpGkBlLzcjANBgkqhkiG9w0B&#xa;AQsFAAOCAgEAOtD1tPlQAsAozmZxFGc7PiMkJpZbpS31Hb32/aFwTxeN/7VEmTPM&#xa;+FyIo+ZxgL+GD6SGWtpunCGs2Hms3lbSxnPNPbdcaG6whP12Ih/xGuQEbXVq6uY3&#xa;fmCL/zIHthIjDPbgvtrC0xB/1kioMrDdGK1jp1F9q1cd+9P3cTPXgpekTzcFixGF&#xa;BkQTM0ty8FjZnwTYwtAJ7RcxbzhIGi4YlJGIBOi98XvParnR2co2XhR+gBBPhppC&#xa;0zKscOXtQrOyWymrq1XSEdFhExznQREXkGsUX9Ogw8yTdREt9jdlijjtQGISBlwG&#xa;807Ru8m6HeO35dhUp3fS1ZOQ94Zlmls8Uw4F0slQ5v44rhhbOziy3fcb63zSvFJ1&#xa;jzk5yEoxER7tMiWrxCniGSI7kIs0ACGEWHbsbjfQuGVvTe2S/yBmUbCSuZPS9r1X&#xa;w3EPapovLDMmx8PBLMXDa75bBE+si/3xS4w8OIepTrk+oajAWPjHSFrt6QRRI9Mv&#xa;L1UEoxV1K7amnTybXb66kpvucZz0pQYVuRypOYLlFuFMC2vj8M/64Hfb5OhFG+6p&#xa;RtFRdYl9s/H+R+Y+fB4o9Tf5vMpYwOCrBfTEGvm4JLBRGXn6f0ODcGqwVYVWyPEo&#xa;4pv8jZSiNJsmm6gsQXR4fLIPGuNjwmxJmm51Itv0Lb+FQogRk/9I0AI=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="2021-08-18T16:46:38+00:00; +34m46s from scanner time."><elem key="delta">2086.0</elem>
+<elem key="date">2021-08-18T16:46:38+00:00</elem>
+</script><script id="tls-alpn" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="127"/><service name="pando-pub" method="table" conf="3"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: 2h19m47s, deviation: 3h30m02s, median: 34m45s"><elem key="count">4</elem>
+<elem key="mean">8387</elem>
+<elem key="median">2085</elem>
+<elem key="stddev">12602</elem>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 10 Pro 19042 (Windows 10 Pro 6.3)&#xa;  OS CPE: cpe:/o:microsoft:windows_10::-&#xa;  Computer name: Love&#xa;  NetBIOS computer name: LOVE\x00&#xa;  Workgroup: WORKGROUP\x00&#xa;  System time: 2021-08-18T09:46:26-07:00&#xa;"><elem key="os">Windows 10 Pro 19042</elem>
+<elem key="lanmanager">Windows 10 Pro 6.3</elem>
+<elem key="server">LOVE\x00</elem>
+<elem key="date">2021-08-18T09:46:26-07:00</elem>
+<elem key="fqdn">Love</elem>
+<elem key="domain_dns">Love</elem>
+<elem key="workgroup">WORKGROUP\x00</elem>
+<elem key="cpe">cpe:/o:microsoft:windows_10::-</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2021-08-18T16:46:25&#xa;  start_date: N/A"><elem key="date">2021-08-18T16:46:25</elem>
+<elem key="start_date">N/A</elem>
+</script></hostscript><times srtt="173073" rttvar="45481" to="354997"/>
+</host>
+<runstats><finished time="1629303113" timestr="Wed Aug 18 11:11:53 2021" summary="Nmap done at Wed Aug 18 11:11:53 2021; 1 IP address (1 host up) scanned in 182.62 seconds" elapsed="182.62" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

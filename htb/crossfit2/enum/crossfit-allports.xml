@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.91 scan initiated Thu Aug 19 11:28:59 2021 as: nmap -p- -&#45;min-rate 10000 -oA crossfit-allports 10.10.10.232 -->
+<nmaprun scanner="nmap" args="nmap -p- -&#45;min-rate 10000 -oA crossfit-allports 10.10.10.232" start="1629390539" startstr="Thu Aug 19 11:28:59 2021" version="7.91" xmloutputversion="1.05">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<hosthint><status state="up" reason="unknown-response" reason_ttl="0"/>
+<address addr="10.10.10.232" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+</hosthint>
+<taskprogress task="SYN Stealth Scan" time="1629391116" percent="99.99" remaining="1" etc="1629391116"/>
+<host starttime="1629390539" endtime="1629391116"><status state="up" reason="echo-reply" reason_ttl="254"/>
+<address addr="10.10.10.232" addrtype="ipv4"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="50262">
+<extrareasons reason="resets" count="50262"/>
+</extraports>
+<extraports state="filtered" count="15270">
+<extrareasons reason="no-responses" count="15270"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8953"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="ub-dns-control" method="table" conf="3"/></port>
+</ports>
+<times srtt="396162" rttvar="46872" to="583650"/>
+</host>
+<runstats><finished time="1629391116" timestr="Thu Aug 19 11:38:36 2021" summary="Nmap done at Thu Aug 19 11:38:36 2021; 1 IP address (1 host up) scanned in 576.97 seconds" elapsed="576.97" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>

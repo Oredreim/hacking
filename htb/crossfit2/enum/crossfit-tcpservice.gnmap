@@ -1,0 +1,4 @@
+# Nmap 7.91 scan initiated Thu Aug 19 11:46:30 2021 as: nmap -p22,80,8953 -sC -sV -oA crossfit-tcpservice 10.10.10.232
+Host: 10.10.10.232 ()	Status: Up
+Host: 10.10.10.232 ()	Ports: 22/open/tcp//ssh//OpenSSH 8.4 (protocol 2.0)/, 80/open/tcp//http//(PHP 7.4.12)/, 8953/open/tcp//ssl|ub-dns-control?///
+# Nmap done at Thu Aug 19 11:47:23 2021 -- 1 IP address (1 host up) scanned in 53.71 seconds

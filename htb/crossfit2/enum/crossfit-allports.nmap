@@ -1,0 +1,11 @@
+# Nmap 7.91 scan initiated Thu Aug 19 11:28:59 2021 as: nmap -p- --min-rate 10000 -oA crossfit-allports 10.10.10.232
+Warning: 10.10.10.232 giving up on port because retransmission cap hit (10).
+Nmap scan report for 10.10.10.232
+Host is up (0.40s latency).
+Not shown: 50262 closed ports, 15270 filtered ports
+PORT     STATE SERVICE
+22/tcp   open  ssh
+80/tcp   open  http
+8953/tcp open  ub-dns-control
+
+# Nmap done at Thu Aug 19 11:38:36 2021 -- 1 IP address (1 host up) scanned in 576.97 seconds

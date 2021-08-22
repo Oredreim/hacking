@@ -1,0 +1,82 @@
+# Nmap 7.91 scan initiated Thu Aug 19 11:46:30 2021 as: nmap -p22,80,8953 -sC -sV -oA crossfit-tcpservice 10.10.10.232
+WARNING: Service 10.10.10.232:80 had already soft-matched http, but now soft-matched rtsp; ignoring second value
+WARNING: Service 10.10.10.232:80 had already soft-matched http, but now soft-matched rtsp; ignoring second value
+Nmap scan report for 10.10.10.232
+Host is up (0.12s latency).
+
+PORT     STATE SERVICE             VERSION
+22/tcp   open  ssh                 OpenSSH 8.4 (protocol 2.0)
+| ssh-hostkey: 
+|   3072 35:0a:81:06:de:be:8c:d8:d7:27:66:db:96:94:fd:52 (RSA)
+|   256 94:60:55:35:9a:1a:a8:45:a1:ae:19:cd:61:05:ec:3f (ECDSA)
+|_  256 a2:c8:6b:6e:11:b6:70:69:db:d2:60:2e:2f:d1:2f:ab (ED25519)
+80/tcp   open  http                (PHP 7.4.12)
+| fingerprint-strings: 
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.0 200 OK
+|     Connection: close
+|     Connection: close
+|     Content-type: text/html; charset=UTF-8
+|     Date: Thu, 19 Aug 2021 16:59:47 GMT
+|     Server: OpenBSD httpd
+|     X-Powered-By: PHP/7.4.12
+|     <!DOCTYPE html>
+|     <html lang="zxx">
+|     <head>
+|     <meta charset="UTF-8">
+|     <meta name="description" content="Yoga StudioCrossFit">
+|     <meta name="keywords" content="Yoga, unica, creative, html">
+|     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+|     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+|     <title>CrossFit</title>
+|     <!-- Google Font -->
+|     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
+|     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500,600,700&display=swap" rel="stylesheet">
+|     <!-- Css Styles -->
+|     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+|_    <link rel="styleshe
+|_http-server-header: OpenBSD httpd
+|_http-title: CrossFit
+8953/tcp open  ssl/ub-dns-control?
+1 service unrecognized despite returning data. If you know the service/version, please submit the following fingerprint at https://nmap.org/cgi-bin/submit.cgi?new-service :
+SF-Port80-TCP:V=7.91%I=7%D=8/19%Time=611E8AFA%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,2AAF,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nConnecti
+SF:on:\x20close\r\nContent-type:\x20text/html;\x20charset=UTF-8\r\nDate:\x
+SF:20Thu,\x2019\x20Aug\x202021\x2016:59:47\x20GMT\r\nServer:\x20OpenBSD\x2
+SF:0httpd\r\nX-Powered-By:\x20PHP/7\.4\.12\r\n\r\n<!DOCTYPE\x20html>\n<htm
+SF:l\x20lang=\"zxx\">\n\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"UTF-8\
+SF:">\n\x20\x20\x20\x20<meta\x20name=\"description\"\x20content=\"Yoga\x20
+SF:StudioCrossFit\">\n\x20\x20\x20\x20<meta\x20name=\"keywords\"\x20conten
+SF:t=\"Yoga,\x20unica,\x20creative,\x20html\">\n\x20\x20\x20\x20<meta\x20n
+SF:ame=\"viewport\"\x20content=\"width=device-width,\x20initial-scale=1\.0
+SF:\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"X-UA-Compatible\"\x20content
+SF:=\"ie=edge\">\n\x20\x20\x20\x20<title>CrossFit</title>\n\n\x20\x20\x20\
+SF:x20<!--\x20Google\x20Font\x20-->\n\x20\x20\x20\x20<link\x20href=\"https
+SF:://fonts\.googleapis\.com/css\?family=PT\+Sans:400,700&display=swap\"\x
+SF:20rel=\"stylesheet\">\n\x20\x20\x20\x20<link\x20href=\"https://fonts\.g
+SF:oogleapis\.com/css\?family=Oswald:400,500,600,700&display=swap\"\x20rel
+SF:=\"stylesheet\">\n\n\x20\x20\x20\x20<!--\x20Css\x20Styles\x20-->\n\x20\
+SF:x20\x20\x20<link\x20rel=\"stylesheet\"\x20href=\"css/bootstrap\.min\.cs
+SF:s\"\x20type=\"text/css\">\n\x20\x20\x20\x20<link\x20rel=\"styleshe")%r(
+SF:HTTPOptions,2FEE,"HTTP/1\.0\x20200\x20OK\r\nConnection:\x20close\r\nCon
+SF:nection:\x20close\r\nContent-type:\x20text/html;\x20charset=UTF-8\r\nDa
+SF:te:\x20Thu,\x2019\x20Aug\x202021\x2016:59:47\x20GMT\r\nServer:\x20OpenB
+SF:SD\x20httpd\r\nX-Powered-By:\x20PHP/7\.4\.12\r\n\r\n<!DOCTYPE\x20html>\
+SF:n<html\x20lang=\"zxx\">\n\n<head>\n\x20\x20\x20\x20<meta\x20charset=\"U
+SF:TF-8\">\n\x20\x20\x20\x20<meta\x20name=\"description\"\x20content=\"Yog
+SF:a\x20StudioCrossFit\">\n\x20\x20\x20\x20<meta\x20name=\"keywords\"\x20c
+SF:ontent=\"Yoga,\x20unica,\x20creative,\x20html\">\n\x20\x20\x20\x20<meta
+SF:\x20name=\"viewport\"\x20content=\"width=device-width,\x20initial-scale
+SF:=1\.0\">\n\x20\x20\x20\x20<meta\x20http-equiv=\"X-UA-Compatible\"\x20co
+SF:ntent=\"ie=edge\">\n\x20\x20\x20\x20<title>CrossFit</title>\n\n\x20\x20
+SF:\x20\x20<!--\x20Google\x20Font\x20-->\n\x20\x20\x20\x20<link\x20href=\"
+SF:https://fonts\.googleapis\.com/css\?family=PT\+Sans:400,700&display=swa
+SF:p\"\x20rel=\"stylesheet\">\n\x20\x20\x20\x20<link\x20href=\"https://fon
+SF:ts\.googleapis\.com/css\?family=Oswald:400,500,600,700&display=swap\"\x
+SF:20rel=\"stylesheet\">\n\n\x20\x20\x20\x20<!--\x20Css\x20Styles\x20-->\n
+SF:\x20\x20\x20\x20<link\x20rel=\"stylesheet\"\x20href=\"css/bootstrap\.mi
+SF:n\.css\"\x20type=\"text/css\">\n\x20\x20\x20\x20<link\x20rel=\"styleshe
+SF:");
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Aug 19 11:47:23 2021 -- 1 IP address (1 host up) scanned in 53.71 seconds

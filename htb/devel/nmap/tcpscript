@@ -1,26 +1,23 @@
-# Nmap 7.91 scan initiated Sat Apr  3 19:08:34 2021 as: nmap -sC -sV -p21,80 -oN targetted 10.10.10.5
+# Nmap 7.92 scan initiated Fri Oct 29 10:01:03 2021 as: nmap -sCV -p21,80 -oN tcpscript 10.10.10.5
 Nmap scan report for 10.10.10.5
-Host is up (0.099s latency).
+Host is up (0.11s latency).
 
 PORT   STATE SERVICE VERSION
 21/tcp open  ftp     Microsoft ftpd
-| ftp-anon: Anonymous FTP login allowed (FTP code 230)
-| 03-18-17  02:06AM       <DIR>          aspnet_client
-| 04-04-21  02:18AM                 1412 bendicion.asp
-| 04-04-21  02:05AM                 1581 cmdasp.asp
-| 03-17-17  05:37PM                  689 iisstart.htm
-| 04-04-21  02:00AM                   23 test.htm
-| 04-04-21  02:11AM                 1412 webshell.asp
-| 04-04-21  02:03AM                 4464 webshell.aspx
-|_03-17-17  05:37PM               184946 welcome.png
 | ftp-syst: 
 |_  SYST: Windows_NT
+| ftp-anon: Anonymous FTP login allowed (FTP code 230)
+| 03-18-17  02:06AM       <DIR>          aspnet_client
+| 03-17-17  05:37PM                  689 iisstart.htm
+| 10-29-21  03:14PM                 2936 reverse.aspx
+| 10-29-21  04:02AM                 2770 shell.aspx
+|_03-17-17  05:37PM               184946 welcome.png
 80/tcp open  http    Microsoft IIS httpd 7.5
 | http-methods: 
 |_  Potentially risky methods: TRACE
-|_http-server-header: Microsoft-IIS/7.5
 |_http-title: IIS7
+|_http-server-header: Microsoft-IIS/7.5
 Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Sat Apr  3 19:08:50 2021 -- 1 IP address (1 host up) scanned in 16.12 seconds
+# Nmap done at Fri Oct 29 10:01:40 2021 -- 1 IP address (1 host up) scanned in 36.53 seconds
